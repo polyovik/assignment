@@ -84,4 +84,20 @@ p {
         margin-top: 80px;
    }
 
+    /*Footer Section*/
  
+    .footer {
+        margin-top: 50px;
+        background-color: #3183f4;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        margin-top: 30px;
+    }
+
+    .footer h4 {
+        color: #ffffff;
+        font-size: 15px;
+    }
