@@ -1,5 +1,5 @@
 /*connect fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,6 +8,32 @@ body {
 h1 {
     font-weight: 900;
     font-size: 55px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffffff;
+    line-height: 55px;
+}
+
+h4 {
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 25px;
+    color: #798188;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #798188;
+    margin-top: 20px;
 }
 
 .blue-color-text{
@@ -25,19 +51,16 @@ h1 {
 
 
 .introduction-text {
-    padding: 100px 80px 100px 80px;
+    padding: 120px 0 100px 100px;
     justify-content: center;
 }
 
-.introduction-text p {
-    font-size: 22px;
-    font-weight: 400;
-    color: #798188;
-}
 
 /*About Us Section*/
 
 .about-us .container-fluid {
+    background-color: #8e979e;
+    background-blend-mode: multiply;
     height: 500px;
     background-image: url(https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-repeat: no-repeat;
@@ -45,6 +68,20 @@ h1 {
 }
 
 
-.about-us-text p {
+.about-us-text { 
+    margin: 150px 0 0 50px;
+    padding-right: 30px;
+   }
 
+
+   /*Options Section*/
+
+   .options .row {
+    padding: 0 50px 0 50px;
 }
+
+   .options-text {
+        margin-top: 80px;
+   }
+
+ 
