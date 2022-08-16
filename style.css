@@ -38,10 +38,7 @@ p {
     margin-top: 20px;
 }
 
-li {
-    font-weight: 500;
-    color: rgb(226, 239, 255);
-}
+
 
 
 .blue-color-text{
@@ -49,6 +46,37 @@ li {
 }
 
 
+
+/* Header Section */
+.navbar {
+    padding: 0 70px 0 70px;
+}
+
+.navbar-logo {
+    height: 150px;
+}
+
+.navbar-logo img {
+    height: 100%;
+}
+
+
+
+.navbar-nav li {
+    margin-left: 35px;
+    font-weight: 600;
+}
+
+.collapse button {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #3183f4;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
 
 /* Home Section */
 
@@ -118,6 +146,8 @@ li {
 
     .footer-content li {
         margin-bottom: 10px;
+        font-weight: 500;
+        color: #e2efff;
     }
 
     .footer-content button {
