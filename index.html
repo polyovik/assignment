@@ -2,244 +2,242 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Canvas</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
 
-	<link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-	<header id="header" class="header">
-		<nav class="navbar navbar-expand-lg bg-white">
-			<div class="container-fluid">
-				<a class="navbar-logo" href="https://i.imgur.com/0otiXIh.png"><img
-						src="https://github.com/polyovik/hosted-assets/blob/main/Canvas.png?raw=true" alt=""></a>
-				<!--  --<a class="navbar-brand" href="#">Navbar</a> !--  -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a href="#home" class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a href="#about-us" class="nav-link active" href="#">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Rates</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Single</a>
-						</li>
-						<li class="nav-item">
-							<a href="#footer" class="nav-link active" href="#">Contact Us</a>
-						</li>
-					</ul>
-					<button class="header-button"> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link"><svg
-								xmlns="http://www.w3.org/2000/svg" viewBox="3 0 24 24" width="16" height="16">
-								<path fill="none" d="M0 0h24v24H0z" />
-								<path
-									d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"
-									fill="rgba(255,255,255,1)" />
-							</svg>+(61)8-234-532-45</a> </button>
-				</div>
-			</div>
-		</nav>
+  <header id="header" class="header">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-logo" href="https://i.imgur.com/0otiXIh.png"><img
+            src="https://github.com/polyovik/hosted-assets/blob/main/Canvas.png?raw=true" alt="icon"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-us" class="nav-link active" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Single</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link active" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <button class="header-button"> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="3 0 24 24" width="16" height="16">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M21 16.42v3.536a1 1 0 0 1-.93.998c-.437.03-.794.046-1.07.046-8.837 0-16-7.163-16-16 0-.276.015-.633.046-1.07A1 1 0 0 1 4.044 3H7.58a.5.5 0 0 1 .498.45c.023.23.044.413.064.552A13.901 13.901 0 0 0 9.35 8.003c.095.2.033.439-.147.567l-2.158 1.542a13.047 13.047 0 0 0 6.844 6.844l1.54-2.154a.462.462 0 0 1 .573-.149 13.901 13.901 0 0 0 4 1.205c.139.02.322.042.55.064a.5.5 0 0 1 .449.498z"
+                  fill="rgba(255,255,255,1)" />
+              </svg>+(61)8-234-532-45</a> </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-	</header>
+  <main class="main">
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 introduction">
+            <h1>We are making better <span class="blue-color-text">CoWorking</span> for you.</h1>
+          </div>
+          <div class="col-md-6 introduction-text">
+            <h4>Collaboratively coordinate adaptive synergy with compelling "outside the box" thinking.
+              Continually recaptiulize user friendly sources whereas leveraged.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<main class="main">
-		<section id="home" class="home">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 introduction">
-						<h1>We are making better <span class="blue-color-text">CoWorking</span> for you.</h1>
-					</div>
-					<div class="col-md-6 introduction-text">
-						<h4>Collaboratively coordinate adaptive synergy with compelling "outside the box" thinking.
-							Continually recaptiulize user friendly sources whereas leveraged.</h4>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="about-us" class="about-us">
+      <div class="container-fluid">
+        <div class="row m-0">
+          <div class="col-md-6 about-us-text">
+            <h3>
+              The Center is a network of 9 workplaces, from 200 to 3,700 sqft,
+              Build and Designed to support Personal and Buisnesses in the Creative World.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section id="about-us" class="about-us">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 about-us-text">
-						<h3>
-							The Center is a network of 9 workplaces, from 200 to 3,700 sqft,
-							Build and Designed to support Personal and Buisnesses in the Creative World.
-						</h3>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="options" class="options">
+      <div class="container-fluid">
+        <div class="row m-0">
+          <div class="col-md-4 options-text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M.69 6.997A17.925 17.925 0 0 1 12 3c4.285 0 8.22 1.497 11.31 3.997l-1.256 1.556A15.933 15.933 0 0 0 12 5C8.191 5 4.694 6.33 1.946 8.553L.69 6.997zm3.141 3.89A12.946 12.946 0 0 1 12 8c3.094 0 5.936 1.081 8.169 2.886l-1.257 1.556A10.954 10.954 0 0 0 12 10c-2.618 0-5.023.915-6.912 2.442l-1.257-1.556zm3.142 3.89A7.967 7.967 0 0 1 12 13c1.904 0 3.653.665 5.027 1.776l-1.257 1.556A5.975 5.975 0 0 0 12 15c-1.428 0-2.74.499-3.77 1.332l-1.257-1.556zm3.142 3.89A2.987 2.987 0 0 1 12 18c.714 0 1.37.25 1.885.666L12 21l-1.885-2.334z"
+                fill="rgba(49,131,244,1)" />
+            </svg>
+            <h4>
+              Fiber Optic WiFi
+            </h4>
+            <p>
+              Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
+              You will never
+              have to touch any PHP Codes.
+            </p>
+          </div>
+          <div class="col-md-4 options-text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M16 13V5H6v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zM5 3h15a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V4a1 1 0 0 1 1-1zm13 2v3h2V5h-2zM2 19h18v2H2v-2z"
+                fill="rgba(49,131,244,1)" />
+            </svg>
+            <h4>
+              Cafeteria
+            </h4>
+            <p>
+              Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
+              You will never
+              have to touch any PHP Codes.
+            </p>
+          </div>
+          <div class="col-md-4 options-text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" width="24" height="28">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M4 16h16V5H4v11zm9 2v2h4v2H7v-2h4v-2H2.992A.998.998 0 0 1 2 16.993V4.007C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007v12.986c0 .556-.455 1.007-.992 1.007H13z"
+                fill="rgba(49,131,244,1)" />
+            </svg>
+            <h4>
+              Flexible Desks
+            </h4>
+            <p>
+              Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
+              You will never
+              have to touch any PHP Codes.
+            </p>
+          </div>
+          <div class="col-md-4 options-text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M19 10h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h1V9a7 7 0 1 1 14 0v1zM5 12v8h14v-8H5zm6 2h2v4h-2v-4zm6-4V9A5 5 0 0 0 7 9v1h10z"
+                fill="rgba(49,131,244,1)" />
+            </svg>
+            <h4>
+              Lockers
+            </h4>
+            <p>
+              Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
+              You will never
+              have to touch any PHP Codes.
+            </p>
+          </div>
+          <div class="col-md-4 options-text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 40 10" width="50" height="28">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M17 13v1c0 2.77-.664 5.445-1.915 7.846l-.227.42-1.747-.974c1.16-2.08 1.81-4.41 1.882-6.836L15 14v-1h2zm-6-3h2v4l-.005.379a12.941 12.941 0 0 1-2.691 7.549l-.231.29-1.55-1.264a10.944 10.944 0 0 0 2.471-6.588L11 14v-4zm1-4a5 5 0 0 1 5 5h-2a3 3 0 0 0-6 0v3c0 2.235-.82 4.344-2.271 5.977l-.212.23-1.448-1.38a6.969 6.969 0 0 0 1.925-4.524L7 14v-3a5 5 0 0 1 5-5zm0-4a9 9 0 0 1 9 9v3c0 1.698-.202 3.37-.597 4.99l-.139.539-1.93-.526c.392-1.437.613-2.922.658-4.435L19 14v-3A7 7 0 0 0 7.808 5.394L6.383 3.968A8.962 8.962 0 0 1 12 2zM4.968 5.383l1.426 1.425a6.966 6.966 0 0 0-1.39 3.951L5 11 5.004 13c0 1.12-.264 2.203-.762 3.177l-.156.29-1.737-.992c.38-.665.602-1.407.646-2.183L3.004 13v-2a8.94 8.94 0 0 1 1.964-5.617z"
+                fill="rgba(49,131,244,1)" />
+            </svg>
+            <h4>
+              100% Secure
+            </h4>
+            <p>
+              Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
+              You will never
+              have to touch any PHP Codes.
+            </p>
+          </div>
+          <div class="col-md-4 options-text">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M6 19H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm0-2v-1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1h2V9H4v8h2zM8 4v3h8V4H8zm0 13v3h8v-3H8zm-3-7h3v2H5v-2z"
+                fill="rgba(49,131,244,1)" />
+            </svg>
+            <h4>
+              Printers & Fax
+            </h4>
+            <p>
+              Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
+              You will never
+              have to touch any PHP Codes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section id="options" class="options">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-4 options-text">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path
-								d="M.69 6.997A17.925 17.925 0 0 1 12 3c4.285 0 8.22 1.497 11.31 3.997l-1.256 1.556A15.933 15.933 0 0 0 12 5C8.191 5 4.694 6.33 1.946 8.553L.69 6.997zm3.141 3.89A12.946 12.946 0 0 1 12 8c3.094 0 5.936 1.081 8.169 2.886l-1.257 1.556A10.954 10.954 0 0 0 12 10c-2.618 0-5.023.915-6.912 2.442l-1.257-1.556zm3.142 3.89A7.967 7.967 0 0 1 12 13c1.904 0 3.653.665 5.027 1.776l-1.257 1.556A5.975 5.975 0 0 0 12 15c-1.428 0-2.74.499-3.77 1.332l-1.257-1.556zm3.142 3.89A2.987 2.987 0 0 1 12 18c.714 0 1.37.25 1.885.666L12 21l-1.885-2.334z"
-								fill="rgba(49,131,244,1)" />
-						</svg>
-						<h4>
-							Fiber Optic WiFi
-						</h4>
-						<p>
-							Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
-							You will never
-							have to touch any PHP Codes.
-						</p>
-					</div>
-					<div class="col-md-4 options-text">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path
-								d="M16 13V5H6v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zM5 3h15a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V4a1 1 0 0 1 1-1zm13 2v3h2V5h-2zM2 19h18v2H2v-2z"
-								fill="rgba(49,131,244,1)" />
-						</svg>
-						<h4>
-							Cafeteria
-						</h4>
-						<p>
-							Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
-							You will never
-							have to touch any PHP Codes.
-						</p>
-					</div>
-					<div class="col-md-4 options-text">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" width="24" height="28">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path
-								d="M4 16h16V5H4v11zm9 2v2h4v2H7v-2h4v-2H2.992A.998.998 0 0 1 2 16.993V4.007C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007v12.986c0 .556-.455 1.007-.992 1.007H13z"
-								fill="rgba(49,131,244,1)" />
-						</svg>
-						<h4>
-							Flexible Desks
-						</h4>
-						<p>
-							Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
-							You will never
-							have to touch any PHP Codes.
-						</p>
-					</div>
-					<div class="col-md-4 options-text">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path
-								d="M19 10h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h1V9a7 7 0 1 1 14 0v1zM5 12v8h14v-8H5zm6 2h2v4h-2v-4zm6-4V9A5 5 0 0 0 7 9v1h10z"
-								fill="rgba(49,131,244,1)" />
-						</svg>
-						<h4>
-							Lockers
-						</h4>
-						<p>
-							Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
-							You will never
-							have to touch any PHP Codes.
-						</p>
-					</div>
-					<div class="col-md-4 options-text">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 40 10" width="50" height="28">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path
-								d="M17 13v1c0 2.77-.664 5.445-1.915 7.846l-.227.42-1.747-.974c1.16-2.08 1.81-4.41 1.882-6.836L15 14v-1h2zm-6-3h2v4l-.005.379a12.941 12.941 0 0 1-2.691 7.549l-.231.29-1.55-1.264a10.944 10.944 0 0 0 2.471-6.588L11 14v-4zm1-4a5 5 0 0 1 5 5h-2a3 3 0 0 0-6 0v3c0 2.235-.82 4.344-2.271 5.977l-.212.23-1.448-1.38a6.969 6.969 0 0 0 1.925-4.524L7 14v-3a5 5 0 0 1 5-5zm0-4a9 9 0 0 1 9 9v3c0 1.698-.202 3.37-.597 4.99l-.139.539-1.93-.526c.392-1.437.613-2.922.658-4.435L19 14v-3A7 7 0 0 0 7.808 5.394L6.383 3.968A8.962 8.962 0 0 1 12 2zM4.968 5.383l1.426 1.425a6.966 6.966 0 0 0-1.39 3.951L5 11 5.004 13c0 1.12-.264 2.203-.762 3.177l-.156.29-1.737-.992c.38-.665.602-1.407.646-2.183L3.004 13v-2a8.94 8.94 0 0 1 1.964-5.617z"
-								fill="rgba(49,131,244,1)" />
-						</svg>
-						<h4>
-							100% Secure
-						</h4>
-						<p>
-							Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
-							You will never
-							have to touch any PHP Codes.
-						</p>
-					</div>
-					<div class="col-md-4 options-text">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-							<path fill="none" d="M0 0h24v24H0z" />
-							<path
-								d="M6 19H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm0-2v-1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1h2V9H4v8h2zM8 4v3h8V4H8zm0 13v3h8v-3H8zm-3-7h3v2H5v-2z"
-								fill="rgba(49,131,244,1)" />
-						</svg>
-						<h4>
-							Printers & Fax
-						</h4>
-						<p>
-							Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest.
-							You will never
-							have to touch any PHP Codes.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 footer-content">
+            <h5>Features</h5>
+            <ul>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Help Center</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Paid with Mobile</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Status</a></li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Contact Support</a> </li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-content">
+            <h5>Support</h5>
+            <ul>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Home</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">About</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">FAQs</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Support</a> </li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-content">
+            <h5>Trending</h5>
+            <ul>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Shop</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Portfolio</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Blog</a> </li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-content">
+            <h5>Get to Know Us</h5>
+            <ul>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Corporate</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Agency</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">eCommerce</a> </li>
+              <li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Personal</a> </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-content">
+            <h5>Instagram Photos</h5>
+            <button> <a href="https://www.instagram.com/instagram/" class="nav-link">Fetching Photos from
+                Instagram...</a> </button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<footer id="footer" class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 footer-content">
-						<h5>Features</h5>
-						<ul>
-							<li> <a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Help Center</a> </li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Paid with Mobile</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Status</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Contact Support</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 footer-content">
-						<h5>Support</h5>
-						<ul>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Home</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">About</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">FAQs</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Support</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 footer-content">
-						<h5>Trending</h5>
-						<ul>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Shop</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Portfolio</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Blog</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 footer-content">
-						<h5>Get to Know Us</h5>
-						<ul>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Corporate</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Agency</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">eCommerce</a></li>
-							<li><a href="https://i.imgur.com/0otiXIh.png" class="nav-link">Personal</a></li>
-						</ul>
-					</div>
-					<div class="col-md-2 footer-content">
-						<h5>Instagram Photos</h5>
-						<button> <a href="https://www.instagram.com/instagram/" class="nav-link">Fetching Photos from
-								Instagram...</a> </button>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-	</main>
+  </main>
 
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
 
